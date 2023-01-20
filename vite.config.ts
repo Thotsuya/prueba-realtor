@@ -9,4 +9,9 @@ export default defineConfig({
     },
   },
   plugins: [vue()],
+  build: {
+    rollupOptions: {
+      external: ["vue", "vue-router", "vue-toastification"],
+    },
+  },
 });
